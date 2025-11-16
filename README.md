@@ -15,30 +15,6 @@ By profiling transformer layers and assigning heavier blocks to faster devices, 
 - Generates JSON logs, CSV summaries, and throughput plots.  
 - Ready to extend to **multi-GPU heterogeneous clusters**.
 
----
-
-## 🧩 Repository Structure
-efficient-llm-sharding/
-│
-├── src/ # Core Python modules
-│ ├── sharded_module.py # GPT-2 wrapper with custom layer-to-device routing
-│ ├── mapping.py # Uniform, Hetero, and Profiled layer mappings
-│ └── train_eval.py # Benchmark loop and metric collection
-│
-├── scripts/
-│ ├── run_benchmark.py # CLI runner for benchmarking modes
-│ └── plot_results.py # Generates bar charts from JSON results
-│
-├── results/ # Output JSONs, CSVs, and figures
-├── notebooks/
-│ └── heterollm.ipynb # Main Colab notebook for running experiments
-├── paper/
-│ └── Efficient_Shards_LLMs.pdf
-├── slides/
-│ └── Efficient_Shards_Presentation.pptx
-└── README.md
-
-
 ## ⚙️ Setup
 Run in **Google Colab** or a local Python 3.10+ environment with PyTorch installed.
 
