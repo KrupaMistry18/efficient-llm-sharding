@@ -49,10 +49,3 @@ Mode	Mean TPS	Δ vs Uniform
 Uniform	13,494	—
 Hetero	13,695	+1.49 %
 Hetero Profiled	12,667	−6.13 %
-🧩 Future Work
-
-Dynamic layer rebalancing based on live throughput.
-
-Multi-GPU tests on real heterogeneous clusters (e.g., A100 + T4).
-
-Integrate memory usage and activation cost into cost model.
